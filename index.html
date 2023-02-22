@@ -5,49 +5,61 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles/style.scss" />
+    <link rel="stylesheet" href="src/styles/vendors/reset.scss" />
     <title>Bulbizarre</title>
   </head>
-  <body>
-    <header>
-      <p>Pokémon de base</p>
-      <h1>Bulbizarre</h1>
-      <span>40 PV</span>
-      <img src="src/img/leaf.png" alt="leaf" />
-    </header>
-    <main>
-      <figure>
-        <img src="src/img/bulbizarre.jpg" alt="Bulbizarre" />
-        <figcaption>Pokémon Graine. Taille : 0.7m, poids: 6,9 kg</figcaption>
-      </figure>
-      <div>
-        <img src="src/img/leaf.png" alt="leaf" />
-        <img src="src/img/leaf.png" alt="leaf" />
+  <body class="full-card">
+    <header class="header">
+      <div class="header__left">
+        <span class="header__left-description">Pokémon de base</span>
+        <h2 class="header__left-name ">Bulbizarre</h1>
       </div>
-      <div>
-        <p>
-          <span>Vampigraine</span> A moins que tous les dégâts infligés par
-          cette attaque ne soient prévenus, vous pouvez retirer 1 marqueur de
-          dégâts de Bulbizarre.
+      <div class="header__right">
+        <p class="header__right-pv">
+          40 PV
+          <img class="header__right-img" src="src/img/leaf.png" alt="plante" />
         </p>
-        <p>20</p>
       </div>
-      <div>
-        <figure>
-          <figcaption>faiblesse</figcaption>
-          <img src="src/img/fire.png" alt="fire" />
-        </figure>
-        <figure>
-          <figcaption>Résistance</figcaption>
-        </figure>
-        <figure>
-          <figcaption>Coût de retraite</figcaption>
-          <img src="src/img/normal.png" alt="normal" />
-        </figure>
+  </header>
+  <main class="main">
+    <div class="main__img">
+      <figure class="main__img__content">
+        <img src="src/img/bulbizarre.jpg" alt="bulbizarre" />
+        <figcaption class="main__img-description">
+          Pokémon Graine. Taille : 0.7m, poids: 6.9 kg
+        </figcaption>
+      </figure>
+    </div>
+    <div class="main__attack">
+      <div class="main__attack-type">
+        <img src="src/img/leaf.png" alt="type plante" />
+        <img src="src/img/leaf.png" alt="type plante" />
       </div>
-    </main>
-    <footer>
-      Il a une étrange graine plantée sous son dos. Elle grandit avec lui depuis
-      la naissance. NIV. 13 No. 1
-    </footer>
-  </body>
+      <p class="main__attack-text">
+        <span class="main__attack_highlight">Vampigraine</span> A moins que tous les dégâts infligés 
+        par cette attaque ne soient prévenus, vous
+         pouvez retirer 1 marqueur de dégâts de
+        Bulbizarre.
+      </p>
+      <span class="main__attack-pv">20</span>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__type">
+      <div class="footer__energies footer__type-fire">
+        <p>Faiblesse</p> 
+        <img src="src/img/fire.png" alt="feu" />
+      </div>
+      <div class="footer__energies footer__type-resistance"><p>Résistance</p></div>
+      <div class="footer__energies footer__type-normal">
+        <p>Coût de retraite</p>
+        <img src="src/img/normal.png" alt="normal" />
+      </div>
+    </div>
+    <p class="footer__text">
+      Il y a une étrange graine plantée sur son dos. Elle grandit avec lui
+      depuis sa naissance. NIV. 13 No. 1
+    </p>
+  </footer>
+</body>
 </html>

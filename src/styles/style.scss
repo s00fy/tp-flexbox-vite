@@ -1,0 +1,98 @@
+@import "vendors/reset.scss";
+* {
+    box-sizing: border-box;
+}
+
+.full-card {
+    border: 10px solid;
+    border-image: linear-gradient(to left, #807b1b 20%, #fdeb00 100%) 1;
+    background-color: #9acd32;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.header__left-description {
+    font-size: 0.8rem;
+}
+.header__left-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header__right-pv {
+    color: red;
+}
+
+/*main*/
+/*img*/
+.main__img__content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.main__img__content img {
+    border: 5px solid;
+    border-image: linear-gradient(to left, #807b1b 20%, #fdeb00 100%) 1;
+}
+.main__img-description {
+    font-size: 0.8rem;
+    text-align: center;
+    background: linear-gradient(to left, #807b1b 20%, #fdeb00 100%);
+}
+
+/*attack**/
+.main__attack {
+    display: flex;
+    align-items: center;
+    margin: 3rem 0rem;
+    justify-content: space-around;
+}
+.main__attack-type {
+    display: flex;
+    padding-right: 0.5rem;
+    flex: 0.4;
+}
+.main__attack-text {
+    flex: 2;
+}
+.main__attack_highlight {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.main__attack-pv {
+    flex: 0.6;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+/**footer**/
+.footer {
+    border-top: 2px solid black;
+    padding-top: 0.2rem;
+}
+.footer__type {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.footer__text {
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+    margin: 0rem 0.5rem 0.5rem;
+    border: 3px solid;
+    border-image: linear-gradient(to left, #807b1b 20%, #fdeb00 100%) 1;
+}
